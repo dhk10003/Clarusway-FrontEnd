@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block and Inline Elements</title>
+    <style>
+      #space {
+        height: 200px;
+      }
+      #space-span {
+        height: 200px;
+        font-size: 100px;
+      }
+
+      div {
+        background-color: red;
+        color: whitesmoke;
+        height: 100px;
+      }
+
+      p {
+        background-color: greenyellow;
+      }
+      ul,
+      ol {
+        background-color: lightblue;
+      }
+      li {
+        background-color: antiquewhite;
+      }
+
+      header {
+        background-color: blueviolet;
+      }
+      section {
+        background-color: rgb(133, 100, 164);
+      }
+      .element {
+        background-color: crimson;
+        color: yellow;
+      }
+      #go-to-top-link {
+        color: aquamarine;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p>Lorem, ipsum dolor.</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos,
+      voluptate?
+    </p>
+    <span>Lorem ipsum dolor sit.</span>
+    <span>Hi!!!!!</span>
+    <span id="space-span">Lorem, ipsum dolor.</span>
+    <span>Hi!!</span> -->
+    <p id="space">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, enim?
+    </p>
+    <h2 class="element">BLOCK ELEMENTS</h2>
+    <div>DIV - Lorem ipsum dolor sit amet.</div>
+    <p>p - Lorem ipsum dolor sit amet.</p>
+    <ul>
+      <li>Lorem</li>
+      <li>Test</li>
+      <li>More</li>
+    </ul>
+    <ol>
+      <li>Lorem</li>
+      <li>Test</li>
+      <li>More</li>
+    </ol>
+    <header>header - Lorem ipsum dolor sit amet.</header>
+    <section>section - Lorem ipsum dolor sit amet.</section>
+
+    <!-- h1 - h6 -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <hr />
+    <h3>Heading 3</h3>
+    <hr />
+    <h4>Heading 4</h4>
+    <hr />
+    <h5>Heading 5</h5>
+    <hr />
+    <h6>Heading 6</h6>
+
+    <div>
+      <h2>Test div.</h2>
+      <p>Test div from p.</p>
+    </div>
+
+    <section>
+      <h2>Test section.</h2>
+      <p>Test section from p.</p>
+    </section>
+    <h2 class="element">INLINE ELEMENTS</h2>
+    <img
+      src="https://images.unsplash.com/photo-1584313452005-8ae4be92b63f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      width="200px"
+      alt="Bald eagle"
+    />
+    <img
+      src="./img/eagle.jpg"
+      alt="An eagle on a branch of a tree"
+      width="100px"
+      height="150px"
+      border="1"
+    />
+
+    <a href="https://www.google.com/" target="_blank">Go to the google </a>
+    <a href="https://www.w3schools.com/" target="_blank"
+      >Go to the w3schools
+    </a>
+
+    <a href="https://unsplash.com/photos/X_WiqoIIMk8">
+      <img
+        src="./img/eagle.jpg"
+        alt="An eagle on a branch of a tree"
+        width="100px"
+        height="150px"
+        border="1"
+      />
+    </a>
+
+    <a href="https://www.mapbox.com/">
+      <div style="height: 100px"></div>
+    </a>
+
+    <a href="#space" id>Go to top</a>
+  </body>
+</html>

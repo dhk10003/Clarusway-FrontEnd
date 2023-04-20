@@ -1,0 +1,17 @@
+/* Element selector */
+p {
+    color: green;
+  }
+  /* Id selector = # */
+  #firstParag {
+    color: red;
+  }
+  /* Class selector */
+  .dark {
+    font-size: 20px;
+  }
+
+  .night {
+    background-color: brown;
+    color: white;
+  }
