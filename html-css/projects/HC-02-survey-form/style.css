@@ -1,0 +1,51 @@
+body {
+    background-image: url("background_image.jpg");
+}
+
+.background {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px 20px;
+    text-align: center;
+}
+
+h1, p, label{
+    color: #ffffff;
+}
+
+form {
+    text-align: left;
+    background-color: black;
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+}
+
+#name, #age, #email, #content {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 95%;
+    height: 40px;
+}
+
+.movie-type, .gender {
+    padding-bottom: 20px;
+}
+
+textarea {
+    padding: 15px;
+}
+
+.submit-container {
+    text-align: center;
+}
+
+#submit {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 40px;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}

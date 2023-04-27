@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="content">
+            <h1>NET<span style="color: red;">FLIX</span></h1>
+            <p>Thank you for signing up at Netflix. Tell us more about your self</p>
+        </div>
+        <form action="">
+            <div class="name-box">
+                <label for="name">Name</label><br><br>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="age-box">
+                <label for="age">Age</label><br><br>
+                <input type="number" id="age" placeholder="Age">
+            </div>
+            <div class="email-box">
+                <label for="age">Email</label><br><br>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="content-type">
+                <label for="content">Content Type</label><br><br>
+                <select id="content" name="content">
+                    <option value="Series">Series</option>
+                </select>
+            </div>
+            <div class="movie-type">
+                <label for="movie">Movie Type</label><br><br>
+                <input type="checkbox" id="movie" name="movie" value="Comedy">
+                <label for="movie">Comedy</label><br>
+                <input type="checkbox" id="movie" name="movie" value="Action">
+                <label for="movie">Action</label><br>
+                <input type="checkbox" id="movie" name="movie" value="Romance">
+                <label for="movie">Romance</label>
+            </div>
+            <div class="gender">
+                <label for="gender">Gender</label><br><br>
+                <input type="radio" name="gender" id="male" value="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">Female</label><br>
+                <input type="radio" name="gender" id="other" value="Other">
+                <label for="other">Other</label>
+            </div>
+            <div class="feedback">
+                <label for="feedback">Feed back</label><br><br>
+                <textarea name="feedback" id="feedback" cols="40" rows="7" placeholder="Any comment"></textarea>
+            </div>
+            <div class="submit-container">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
