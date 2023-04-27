@@ -12,6 +12,11 @@ h1, p, label{
     color: #ffffff;
 }
 
+.content h1 {
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
 form {
     text-align: left;
     background-color: black;
