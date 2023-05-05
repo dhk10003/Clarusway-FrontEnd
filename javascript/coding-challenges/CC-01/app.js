@@ -14,7 +14,7 @@ console.log(a && "Text");
 let year = prompt("Enter the year");
 year = parseInt(year);
 console.log(
-  (year % 4 === 0 && year % 100 === 0 && year % 400 && "Leap year") ||
+  (year % 4 === 0 && year % 100 === 0 && year % 400 === 0 && "Leap year") ||
     (year % 4 === 0 && year % 100 !== 0 && "Leap year") ||
     "Not a leap year"
 );
