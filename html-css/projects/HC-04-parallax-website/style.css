@@ -24,6 +24,7 @@
     outline: #691f67 solid 5px;
     outline-offset: 10px;
     border-radius: 25px 0;
+    outline-style: inset;
 }
 
 .first p, .last p {
@@ -95,7 +96,8 @@
     margin-top: 30vh;
     outline: #691f67 solid 5px;
     outline-offset: 5px;
-    border-radius: 25px 0;;
+    border-radius: 25px 0;
+    outline-style: inset;
 }
 
 .third p, .fourth p {
@@ -103,4 +105,3 @@
     letter-spacing: 5px;
     font-size: 40px;
 }
-
