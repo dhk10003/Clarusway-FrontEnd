@@ -4,7 +4,16 @@
 }
 
 body {
-    background-color: #131D25;
+    /* background-color: #131D25; */
+    background: radial-gradient(
+        circle at -12.9% 1%,
+        rgb(255, 124, 0) 0%,
+        rgb(255, 124, 0) 15.9%,
+        rgb(255, 163, 77) 15.9%,
+        rgb(255, 163, 77) 24.4%,
+        rgb(19, 30, 37) 24.5%,
+        rgb(19, 30, 37) 66%
+      );
 }
 
 .header {
@@ -85,6 +94,13 @@ li > a {
     width: 450px;
     height: 250px;
     background-color: white;
+}
+
+.project1:hover, .project2:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+    /* position: relative;
+    top: -5px; */
 }
 
 .footer {
