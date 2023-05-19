@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #131D25;
+}
+
+.header {
+    background: linear-gradient(to right, #232C39, #000001);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.header h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 2.5em;
+    padding-left: 1vw;
+    letter-spacing: 0.05em;
+}
+
+.header a {
+    color: white;
+}
+
+.header a:hover {
+    font-size: 1.8em;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-right: 1vw;
+}
+
+li > a {
+    text-decoration: none;
+    padding-right: 1vw;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.intro{
+    text-align: center;
+    padding: 35vh 0;
+}
+
+.intro h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 2.7em;
+    letter-spacing: .3em;
+}
+
+.intro p {
+    color: #6A8E22;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.project{
+    text-align: center;
+}
+
+.project h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5em;
+    padding: 10vh 0;
+}
+
+.projectImgs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project1, .project2 {
+    width: 450px;
+    height: 250px;
+    background-color: white;
+}
+
+.footer {
+    padding: 10vh 0 3vh;
+    text-align: center;
+}
+
+.icons {
+    padding-bottom: 1.5vh;
+}
+
+.footer p {
+    color: white;
+    font-size: 1.2em;
+}
