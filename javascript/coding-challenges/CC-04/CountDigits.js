@@ -33,3 +33,20 @@ const digitCount = function () {
 };
 
 console.log("Count: ", digitCount());
+
+// Solution:
+// const countDigit = (digit, low, high) => {
+//   let count = 0
+//   for (let i = low; i <= high; i++){
+//     let seperate = `${i}`
+//     seperate = seperate.split("")
+//     for (let j = 0; j < seperate.length; j++){
+//       if(seperate[j] == digit){
+//         count++
+//       }
+//     }
+//   }
+//   return count
+// }
+
+// console.log(countDigit(2, 10, 23))
