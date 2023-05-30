@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearFix {
+    clear: both;
+    height: 4px;
+    background-color: #A9508A;;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #35424A;
+    padding: 1.8rem 10%;
+}
+
+
+.navBar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.navBar ul li a {
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#currentTab{
+    color: #A9508A;
+}
+
+.navBar ul li a:hover, #currentTab:hover {
+    color: rgb(117, 121, 126);
+    font-weight: bold;
+}
+
+.mainImg {
+    display: flex;
+    height: 50vh;
+    background-image: url(img/showcase.jpg);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mainImg h1, .mainImg p {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.mainImg h1 {
+    font-size: 3.5rem;
+}
+    
+.mainImg p {
+    font-size: 1.5rem;
+}
+
+.mainText {
+    width: 80%;
+}
+
+.subscribe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #35424A;
+    padding: 2rem 10%;
+}
+
+.subscribe h1 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#subsEmailBox {
+    padding: 0.5rem;
+    border: none;
+    width: 250px;
+}
+
+#subsButton {
+    padding: .5rem 1.2rem;
+    border: none;
+    background-color: #A9508A;
+    color: #fff;
+    cursor: pointer;
+}
+
+.skills img {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 10%;
+}
+
+.skill {
+    text-align: center;
+    width: 35%;
+}
+
+.skill h2 {
+    margin-bottom: 1rem;
+}
+
+.aboutUs {
+    margin: auto;
+    width: 85%;
+    height: 80vh
+}
+
+.aboutLeft {
+    width: 70%;
+    float: left;
+    padding: 2rem;
+}
+
+.aboutLeftBox1 {
+    font-size: 1.1em;
+}
+
+.aboutLeftBox2 {
+    background-color: #35424A;
+    padding: 1rem;
+    margin-top: .7rem;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.aboutRight {
+    width: 30%;
+    float: right;
+    background-color: #35424A;
+    color: #fff;
+    padding: 2rem 1rem;
+    margin-top: 2%;
+    font-size: 1.1em;
+}
+
+.services {
+    margin: auto;
+    width: 85%;
+}
+
+.serviceLeft {
+    width: 70%;
+    float: left;
+    padding: 2rem;
+}
+
+.serviceBox {
+    background-color: #E6E6E6;
+    border: 1px solid lightgray;
+    padding: 2.5rem 2rem;
+    margin-top: 5px;
+}
+
+.serviceRight {
+    width: 30%;
+    float: right;
+    background-color: #35424A;
+    color: #fff;
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2%;
+    font-size: 1.1em;
+}
+
+#nameBox, #emailBox, #messageBox {
+    padding: 0.5rem;
+    border: none;
+    width: 100%;
+}
+
+#sendButton {
+    padding: .8rem 1.2rem;
+    border: none;
+    background-color: #A9508A;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFAF0;
+    padding: 2rem;
+}
+
