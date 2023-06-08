@@ -1,9 +1,9 @@
 // Valid a SSN (Social Security Number);
 // should have 9 digits. 522-82-5151 (*OK*)
 // should be divided into 3 parts by hyphen (-). (*OK*)
-// The first part should have 3 digits and should not be 000, 666, or between 900 and 999.
-// The second part should have 2 digits and it should be from 01 to 99.
-// The third part should have 4 digits and it should be from 0001 to 9999.
+// The first part should have 3 digits and should not be 000, 666, or between 900 and 999. (*OK*)
+// The second part should have 2 digits and it should be from 01 to 99. (*OK*)
+// The third part should have 4 digits and it should be from 0001 to 9999. (*OK*)
 
 const validSSN = function () {
   const SSN = prompt(
