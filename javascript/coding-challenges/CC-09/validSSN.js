@@ -14,8 +14,6 @@ const validSSN = function () {
   const secondPart = SSN.slice(4, 6);
   const thirdPart = SSN.slice(7);
 
-  console.log(firstPart, secondPart, thirdPart);
-
   if (
     isNaN(ssnNum) || // 9 numbers should be included.
     SSN.length !== 11 || // Total characters should be 11.
