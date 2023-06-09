@@ -31,6 +31,7 @@ nav .nav-links li a {
   border-radius: 5px;
 }
 nav .nav-links li a:hover {
+  transition: all 0.3s;
   color: #00CC66;
 }
 nav .nav-links li .signUp {
