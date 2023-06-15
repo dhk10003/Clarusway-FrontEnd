@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numerals</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Number to Roman Numerals</h1>
+    <div id="container">
+        <div id="calculator">
+            <input type="text" id="input" placeholder="Type 1 - 3000">
+            <button id="convertBtn">Convert</button>
+        </div>
+        <p id="result"></p>
+    </div>
+
+
+    <script>
+        const input = document.querySelector('#input');
+        const convert = document.querySelector('#convert');
+        const result = document.querySelector('#result');
+
+        const romanNumerals = function () {
+            let num = Number(input.value);
+            let roman = '';
+            const romanNumList = {
+                M: 1000,
+                CM: 900,
+                D: 500,
+                CD: 400,
+                C: 100,
+                XC: 90,
+                L: 50,
+                XV: 40,
+                X: 10,
+                IX: 9,
+                V: 5,
+                IV: 4,
+                I: 1
+            };
+            let a;
+            if (num < 1 || num > 3000) {
+                result.innerHTML = "Enter a number between 1 and 3000";
+            } else {
+                for (let key in romanNumList) {
+                    a = Math.floor(num / romanNumList[key]);
+                    if (a >= 0) {
+                        for (let i = 0; i < a; i++) {
+                            roman += key;
+                        }
+                    }
+                    num = num % romanNumList[key];
+                }
+                result.innerHTML = roman;
+            }
+
+        }
+
+
+        convertBtn.addEventListener('click', romanNumerals);
+    </script>
+</body>
+
+</html>

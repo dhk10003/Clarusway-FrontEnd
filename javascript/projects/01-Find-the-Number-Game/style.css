@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(135deg, rgb(248, 135, 94) 30%, rgb(183, 204, 212));
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+.container button {
+  background-color: rgb(13, 148, 192);
+  color: white;
+  border: 0.2px solid black;
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */
