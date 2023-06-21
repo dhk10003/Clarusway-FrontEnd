@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Student Registration</title>
+</head>
+
+<body>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th scope="col">St Nr</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Location</th>
+                <th scope="col">Path</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script>
+        let input = ['C1234 - John Doe, London, Full-Stack',
+            'C2345 - Jane Doe, London, Data-Science',
+            'C2346 - Mary Ann, Paris, AWS-Devops',
+            'C2347 - Adam Smith, Texas, AWS-Devops',
+            'C2444 - Michael Great, Arizona, Full-Stack',
+            'C2555 - William Cash, Manchester, Data-Science',
+            'C2455 - Patrick Jane, Madrid, Full-Stack'];
+
+        const table = document.querySelector('tbody');
+
+        input = input.map(item => item.split(' ').filter(item => item !== '-').join(' ').split(', ').join(' ').split(' '));
+
+        console.log(input);
+
+        table.innerHTML = input.map(item =>
+            `<tr>
+            <th scope="row">${item[0]}</th>
+            <td>${item[1]}</td>
+            <td>${item[2]}</td>
+            <td>${item[3]}</td>
+            <td>${item[4]}</td>
+            </tr>`).join('');
+
+
+    </script>
+</body>
+
+</html>
