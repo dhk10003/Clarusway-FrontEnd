@@ -61,16 +61,102 @@ const task5Function = (dataArr) => {
     return user.dob.age === 28;
   });
 
-  task5Container.innerHTML = `<h5>${age28User.name.first} ${age28User.name.last} (${age28User.dob.age})</h5>`;
+  task5Container.innerHTML = `<h5>${age28User.name.first} ${age28User.name.last}</h5>`;
 };
 
 // Task 6: Generate a new user list from response
 
+let newList = [];
+const task6Function = (dataArr) => {
+  const task6Container = document.querySelector("#task6");
+  const randomNum = (min, max) => {
+    return Math.floor(Math.random() * (max - min) + min);
+  };
+
+  newList = dataArr.map((user) => {
+    return {
+      id: randomNum(1000, 5000),
+      gender: `${user.gender}`,
+      fullName: `${user.name.first} ${user.name.last}`,
+      city: `${user.location.city}`,
+      country: `${user.location.country}`,
+      email: `${user.email}`,
+      username: `${user.login.username}`,
+      password: `${user.login.password}`,
+      age: user.dob.age,
+      picture: `${user.picture.large}`,
+      credit: randomNum(1, 100),
+    };
+  });
+  console.log(newList);
+  task6Container.innerHTML = `<h5>See console log for the whole new list</h5>`;
+};
+
 // Task 7: Develop a bootstrap card and display first 20 users whose credit is greater than 50
+
+const task7Function = (newList) => {
+  const task7Container = document.querySelector("#task7");
+  const creditOver50Arr = newList.filter((creditOver50) => {
+    return creditOver50.credit > 50;
+  });
+
+  const first20Users = creditOver50Arr.slice(0, 20).map((user) => {
+    return `<div class="card" style="width: 18rem;">
+    <img src="${user.picture}" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">${user.fullName}</h5>
+      <p class="card-text">Age: ${user.age}</p>
+      <p class="card-text">Credit: ${user.credit}</p>
+    </div>
+  </div>`;
+  });
+
+  task7Container.innerHTML = first20Users.join("");
+
+  console.log(creditOver50Arr);
+};
 
 // Task 8: Add 3 buttons to filter users as all, female and male
 
-// Fetching data from API
+const task8Function = (dataArr) => {
+  const task8Container = document.querySelector("#task8");
+  const allBtn = document.querySelector("#allBtn");
+  const maleBtn = document.querySelector("#maleBtn");
+  const femaleBtn = document.querySelector("#femaleBtn");
+
+  allBtn.addEventListener("click", () => {
+    const allUsers = dataArr.map((user) => {
+      return `<h5>${user.name.first} ${user.name.last} (${user.gender})</h5>`;
+    });
+    task8Container.innerHTML = allUsers.join("");
+  });
+
+  maleBtn.addEventListener("click", () => {
+    const maleUsersArr = dataArr.filter((maleUser) => {
+      return maleUser.gender === "male";
+    });
+
+    const maleUsers = maleUsersArr.map((user) => {
+      return `<h5>${user.name.first} ${user.name.last} (${user.gender})</h5>`;
+    });
+
+    task8Container.innerHTML = maleUsers.join("");
+  });
+
+  femaleBtn.addEventListener("click", () => {
+    const femaleUsersArr = dataArr.filter((femaleUser) => {
+      return femaleUser.gender === "female";
+    });
+
+    const femaleUsers = femaleUsersArr.map((user) => {
+      return `<h5>${user.name.first} ${user.name.last} (${user.gender})</h5>`;
+    });
+
+    task8Container.innerHTML = femaleUsers.join("");
+  });
+};
+
+// Fetching data from API and calling all the task functions
 async function getInfo() {
   try {
     const response = await fetch(
@@ -78,14 +164,15 @@ async function getInfo() {
     );
     const data = await response.json();
     const dataArr = data.results;
-    console.log(typeof dataArr);
-    console.log(dataArr);
 
     task1Function(dataArr);
     task2Function(dataArr);
     task3Function(dataArr);
     task4Function(dataArr);
     task5Function(dataArr);
+    task6Function(dataArr);
+    task7Function(newList);
+    task8Function(dataArr);
   } catch (error) {
     console.log(error);
   }
