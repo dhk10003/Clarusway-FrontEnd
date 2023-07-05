@@ -112,8 +112,6 @@ const task7Function = (newList) => {
   });
 
   task7Container.innerHTML = first20Users.join("");
-
-  console.log(creditOver50Arr);
 };
 
 // Task 8: Add 3 buttons to filter users as all, female and male
