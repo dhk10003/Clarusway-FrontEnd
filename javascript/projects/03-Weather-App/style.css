@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #0B6396;
+}
+body header {
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+body main {
+  padding: 50px;
+}
+body main #searchContainer form #city {
+  background-color: #0B6396;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 5px;
+  width: 300px;
+  font-size: 2rem;
+}
+body main #searchContainer form #city:focus {
+  outline: none;
+}
+body main #searchContainer form .btn {
+  padding: 10px;
+}
+body main #searchContainer #msg {
+  padding: 5px;
+  color: white;
+  width: 280px;
+}
+body main #displayContainer {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+body main #displayContainer .weatherBox {
+  background-color: white;
+  padding: 30px 50px;
+  border-radius: 30px;
+}
+body main #displayContainer .weatherBox .svgImg {
+  width: 40px;
+  margin: 5px;
+}/*# sourceMappingURL=style.css.map */
