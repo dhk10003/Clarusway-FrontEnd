@@ -7,8 +7,10 @@ const getWeatherData = async (cityName) => {
     const data = response.data;
     return data;
   } catch (error) {
-    if (error.message === "Request failed with status code 404") {
-      document.querySelector("#msg").innerHTML = `<p>City not found</p>`;
+    if (error.response.data.cod === "404") {
+      document.querySelector(
+        "#msg"
+      ).innerHTML = `<p>${error.response.data.message}</p>`;
     }
   }
 };
