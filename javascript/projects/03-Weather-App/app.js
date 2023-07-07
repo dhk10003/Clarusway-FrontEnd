@@ -23,8 +23,10 @@ const WeatherHTML = (data) => {
   const displayContainer = document.querySelector("#displayContainer");
   const html = `<div class="weatherBox">
     <h4>${data.name} - ${data.sys.country}</h4>
-    <h1>${data.main.temp} &#8451;</h1>
-    <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="" class="svgImg">
+    <h1>${Math.round(data.main.temp)} &#8451;</h1>
+    <img src="http://openweathermap.org/img/wn/${
+      data.weather[0].icon
+    }@2x.png" alt="" class="svgImg">
     <h5>${data.weather[0].description}</h5>
    </div>`;
   displayContainer.innerHTML += html;
